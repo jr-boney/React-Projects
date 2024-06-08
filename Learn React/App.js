@@ -1,18 +1,29 @@
-const Items = (props) => {
-  return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
-};
-
-
-
-Items.defaultProps = {
-  quantity: 0
-};
-
-class ShoppingCart extends React.Component {
+class ControlledInput extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      input: ''
+    };
+    // Change code below this line
+this.handleChange = this.handleChange.bind(this)
+    // Change code above this line
   }
+  // Change code below this line
+hadleChange(event) {
+  this.state({input: event.target.value})
+}
+  // Change code above this line
   render() {
-    return <Items />
+    return (
+      <div>
+        { /* Change code below this line */}
+<input onChange={this.handleChange}
+value={this.state.input}
+type="text"/>
+        { /* Change code above this line */}
+        <h4>Controlled Input:</h4>
+        <p>{this.state.input}</p>
+      </div>
+    );
   }
 };
