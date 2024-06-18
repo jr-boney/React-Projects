@@ -1,0 +1,28 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "Aswin",
+	"dependencies": {
+	  "express": "^4.14.0"
+	},
+	"description": "This is  my first project",
+	"keywords": ["node","easy","freecodecamp","tutorial"],
+	"main": "server.js",
+	"scripts": {
+	  "start": "node server.js"
+	},
+	"engines": {
+	  "node": "8.11.2"
+	},"license": "MIT",
+	"version": "1.2.0",
+	"dependencies": {
+    "express": "^4.16.4",
+	
+    "helmet": "^3.14.0"
+  },
+  "package": "MAJOR.MINOR.PATCH"
+  ,
+	"repository": {
+	  "type": "git",
+	  "url": "https://idontknow/todo.git"
+	}
+  }
